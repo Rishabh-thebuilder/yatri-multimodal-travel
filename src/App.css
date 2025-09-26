@@ -1,0 +1,167 @@
+/* App.css */
+
+/* Import Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: #f5f6f8;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.sidebar label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.sidebar button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.sidebar button:hover {
+  background: #1e4ed8;
+}
+
+/* Route cards */
+.route-list {
+  margin-top: 20px;
+}
+
+.route-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.route-card:hover {
+  background: #f3f4f6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.route-details {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Map container */
+.map-container {
+  flex: 1;
+  height: 100vh;   /* full screen */
+  width: 100%;
+  position: relative;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #e5e7eb;
+}
+
+/* Route line colors */
+.route-train {
+  color: #2563eb;
+  weight: 4;
+}
+
+.route-metro {
+  color: #9333ea;
+  weight: 4;
+}
+
+.route-bus {
+  color: #f97316;
+  weight: 4;
+}
+
+.route-auto {
+  color: #16a34a;
+  weight: 4;
+}
+
+.route-walk {
+  color: #6b7280;
+  weight: 3;
+  dashArray: 4;
+}
+
+/* Legend styles */
+.info.legend {
+  background: white;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 18px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.info.legend h4 {
+  margin: 0 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+}

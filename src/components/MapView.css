@@ -1,0 +1,55 @@
+.map-container {
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Style the leaflet map */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #e5e7eb;
+}
+
+/* Route line colors for different modes */
+.route-train {
+  color: #2563eb;
+  weight: 4;
+}
+
+.route-metro {
+  color: #9333ea;
+  weight: 4;
+}
+
+.route-bus {
+  color: #f97316;
+  weight: 4;
+}
+
+.route-auto {
+  color: #16a34a;
+  weight: 4;
+}
+
+.route-walk {
+  color: #6b7280;
+  weight: 3;
+  dashArray: 4;
+}
+
+/* Legend styles */
+.info.legend {
+  background: white;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 18px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.info.legend h4 {
+  margin: 0 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+}

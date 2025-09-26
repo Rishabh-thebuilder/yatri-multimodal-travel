@@ -1,0 +1,148 @@
+.sidebar {
+  padding: 15px;
+  background: #f9fafb;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.routes-list {
+  margin-top: 10px;
+}
+
+.route-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.route-card:hover {
+  background: #eef6ff;
+  border-color: #4a90e2;
+}
+
+.route-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.route-steps {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Mode colors */
+.mode-walk { color: green; }
+.mode-bus { color: #e67e22; }
+.mode-rail, .mode-subway, .mode-train { color: #2980b9; }
+.mode-car, .mode-auto, .mode-cab { color: #8e44ad; }
+
+/* 🔹 Mode buttons styling */
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mode-btn.active {
+  background: #4a90e2;
+  color: white;
+}
+
+.mode-btn:hover {
+  background: #357ab8;
+  color: white;
+}
+
+/* 🔹 Transfers + Last Mile side by side */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.half {
+  flex: 1;
+}
+
+/* 🔹 Ensure dropdowns and buttons align */
+select,
+.mode-btn,
+.react-select__control {
+  width: 100%;
+}
+/* 🔹 Mode buttons styling */
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+  background: white;   /* default white */
+  color: #4a90e2;      /* default blue text */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mode-btn.active {
+  background: #4a90e2; /* blue background */
+  color: white;        /* white text */
+}
+
+.mode-btn:hover {
+  background: #357ab8; /* darker blue on hover */
+  color: white;
+}
+.tag {
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+  color: white;
+}
+
+.tag-fastest {
+  background: #2563eb; /* blue */
+}
+
+.tag-cheapest {
+  background: #16a34a; /* green */
+}
+
+.tag-transfers {
+  background: #f97316; /* orange */
+}
+
+.route-card.selected {
+  border: 2px solid #2563eb;
+  background: #f0f8ff;
+}
